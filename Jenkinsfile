@@ -3,8 +3,8 @@ pipeline {
   stages {
     stage('init_env_variable') {
       steps {
-        sh '''env.VARIABLE_1="10"
-env.VARIABLE_2="7"'''
+        env.VARIABLE_1="10"
+        env.VARIABLE_2="7"
       }
     }
     stage('run main.js') {
