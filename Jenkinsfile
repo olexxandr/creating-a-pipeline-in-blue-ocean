@@ -12,6 +12,11 @@ pipeline {
 env.VARIABLE_2="7"'''
       }
     }
+    stage('run main.js') {
+      steps {
+        sh 'sh \'node main.js\''
+      }
+    }
   }
   environment {
     var1 = 'VAR1'
