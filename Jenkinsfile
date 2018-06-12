@@ -2,9 +2,7 @@ pipeline {
   agent any
   stages {
     stage('init_env_variable') {
-      steps {
-  
-      }
+      echo "Initialization"
     }
     stage('run main.js') {
       steps {
