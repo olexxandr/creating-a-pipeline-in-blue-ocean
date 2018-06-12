@@ -3,8 +3,7 @@ pipeline {
   stages {
     stage('init_env_variable') {
       steps {
-        env.VARIABLE_1="10"
-        env.VARIABLE_2="7"
+  
       }
     }
     stage('run main.js') {
@@ -15,5 +14,7 @@ pipeline {
   }
   environment {
     var1 = 'VAR1'
+    VARIABLE_1="10"
+    VARIABLE_2="7"
   }
 }
